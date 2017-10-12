@@ -5,20 +5,15 @@
     <body>
         <p><input id="num1" placeholder="number"/> + <input id="num2" placeholder="number" /> 
             = <output id="result" /></p>
-        <button type="submit" onclick="calculator()">submit</button>
-        <!-- <button type="reset" onclick="reset()" >reset</button>  -->
+        <button type="button" onclick="calculator()">sum</button>
+        <button type="button" onclick="reset()" >reset</button> 
         <script>
             calculator =()=> {
                 var st = document.getElementById("num1").value;
                 var nd = document.getElementById("num2").value;
                 document.getElementById("result").innerHTML = parseInt(st) + parseInt(nd);
             }
-            // let reset = () => document.getsElementById("num1").innerHTML = '';
-            
-            // reset =()=> {
-            //     var re = document.getElementById("result").value;
-                
-            // }
+            let reset = () => document.getElementById("result").innerHTML = '';
         </script>
     </body>
 </html>
